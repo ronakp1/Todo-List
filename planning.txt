@@ -1,0 +1,31 @@
+module:index
+const firsttodo = todofactory(blah blah blah blah)
+const firstproject = projectfactory(name);
+
+module: todo
+todoFactory (title, desc, duedate, prority) {
+    this.complete 
+    this. title
+    return {title desc duedate prority} 
+}
+
+
+
+module:project
+
+projectFactory(name) {
+this.name
+return {name}
+
+taskarray = []
+
+
+
+}
+
+open index
+add a new task
+delete a task
+add a new project
+then add tasks into those projects
+
