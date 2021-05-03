@@ -58,14 +58,23 @@ html {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: flex;
-          flex-direction: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .main .projects .project-list {
+  width: 85%;
+  height: 25%;
+}
+
+.main .projects .project-list .project:hover {
+  background: grey;
+}
+
+.main .projects .add-project-container {
   width: 85%;
 }
 
@@ -88,7 +97,7 @@ html {
 }
 
 .main .todo .taskContainer .taskList {
-  height: 100%;
+  height: 40%;
   width: 100%;
 }
 
@@ -102,7 +111,18 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  border-bottom: 1px solid #f0f0f0;
+  border: 1px solid #f0f0f0;
+}
+
+.main .todo .taskContainer .taskList .task-item .checkbox {
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 2px solid #3ba395;
+  margin-right: 10px;
+}
+
+.main .todo .taskContainer .taskList .task-item:hover {
+  background: grey;
 }
 
 .main .todo .taskContainer .taskList .task-item .task-name {
@@ -115,5 +135,67 @@ html {
 
 .main .todo .taskContainer .taskList .task-item .task-date {
   width: 25%;
+}
+
+.overlay {
+  position: fixed;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay .project-window {
+  width: 20%;
+  height: 20%;
+  background: rgba(39, 28, 24, 0.8);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.overlay .task-window {
+  width: 25%;
+  height: 25%;
+  background: rgba(39, 28, 24, 0.8);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hide {
+  display: none !important;
 }
 /*# sourceMappingURL=styles.css.map */
